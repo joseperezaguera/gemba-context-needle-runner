@@ -1,0 +1,9 @@
+click>=8.1
+matplotlib>=3.8
+pyyaml>=6.0
+
+# Por proveedor (instala solo el que vayas a usar):
+# openai>=1.30
+# anthropic>=0.34
+# transformers>=4.40
+# torch>=2.2
