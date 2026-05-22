@@ -1,0 +1,5 @@
+{
+  "name": "gemba-context-profiler",
+  "version": "0.1.0",
+  "description": "Skill y comandos para medir el lost-in-the-middle en tu propio uso de LLMs. Acompaña al artículo Gemba '¿Por qué los LLMs olvidan?'"
+}

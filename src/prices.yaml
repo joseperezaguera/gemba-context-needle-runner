@@ -1,0 +1,84 @@
+# Precios indicativos a mayo de 2026 (USD por millón de tokens).
+# Verifica con los proveedores antes de cálculos de presupuesto.
+# Útil para estimar el coste de los experimentos needle-in-haystack
+# (por ejemplo, multiplicando trials × posiciones × chars/4).
+
+# Tipos de cambio aproximados a euros (puede modificarse manualmente)
+exchange:
+  usd_to_eur: 0.92  # ~ mayo 2026
+
+models:
+  # ============ OpenAI ============
+  gpt-4o:
+    provider: openai
+    tokenizer_id: gpt-4o
+    input_per_million_usd: 2.50
+    output_per_million_usd: 10.00
+    notes: "GPT-4o estándar"
+
+  gpt-4o-mini:
+    provider: openai
+    tokenizer_id: gpt-4o-mini
+    input_per_million_usd: 0.15
+    output_per_million_usd: 0.60
+    notes: "GPT-4o Mini — barato para experimentación"
+
+  gpt-4-turbo:
+    provider: openai
+    tokenizer_id: gpt-4-turbo
+    input_per_million_usd: 10.00
+    output_per_million_usd: 30.00
+    notes: "GPT-4 Turbo legacy"
+
+  # ============ Anthropic ============
+  claude-opus-4-7:
+    provider: anthropic
+    tokenizer_id: claude-opus-4-7
+    input_per_million_usd: 15.00
+    output_per_million_usd: 75.00
+    notes: "Claude Opus 4.7 — top de gama"
+
+  claude-sonnet-4-6:
+    provider: anthropic
+    tokenizer_id: claude-sonnet-4-6
+    input_per_million_usd: 3.00
+    output_per_million_usd: 15.00
+    notes: "Claude Sonnet 4.6 — equilibrio calidad/precio"
+
+  claude-haiku-4-5:
+    provider: anthropic
+    tokenizer_id: claude-haiku-4-5
+    input_per_million_usd: 0.80
+    output_per_million_usd: 4.00
+    notes: "Claude Haiku 4.5 — rápido y barato"
+
+  # ============ Meta / Llama (vía proveedores tipo Together, Fireworks) ============
+  llama-3.1-405b:
+    provider: hf
+    tokenizer_id: meta-llama/Meta-Llama-3.1-405B-Instruct
+    input_per_million_usd: 3.50
+    output_per_million_usd: 3.50
+    notes: "Llama 3.1 405B vía proveedor (Together/Fireworks)"
+
+  llama-3-70b:
+    provider: hf
+    tokenizer_id: meta-llama/Meta-Llama-3-70B
+    input_per_million_usd: 0.90
+    output_per_million_usd: 0.90
+    notes: "Llama 3 70B vía proveedor"
+
+  # ============ Mistral ============
+  mistral-large-2:
+    provider: hf
+    tokenizer_id: mistralai/Mistral-Large-Instruct-2407
+    input_per_million_usd: 3.00
+    output_per_million_usd: 9.00
+    notes: "Mistral Large 2 (precio API oficial Mistral)"
+
+  # ============ Qwen ============
+  qwen-2.5-72b:
+    provider: hf
+    tokenizer_id: Qwen/Qwen2.5-72B-Instruct
+    input_per_million_usd: 1.20
+    output_per_million_usd: 1.20
+    notes: "Qwen 2.5 72B vía proveedor"
