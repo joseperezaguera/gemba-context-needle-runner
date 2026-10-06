@@ -11,7 +11,7 @@ El paper de Liu et al. 2024 (*Lost in the Middle*) midió el fenómeno en diez m
 ## Empezar en 60 segundos
 
 ```bash
-git clone https://github.com/josemerca/gemba-context-needle-runner.git
+git clone https://github.com/joseperezaguera/gemba-context-needle-runner.git
 cd gemba-context-needle-runner
 pip install -r requirements.txt           # MockRunner (sin claves)
 python -m src.cli --runner mock
@@ -30,7 +30,7 @@ python -m src.cli --runner anthropic --model claude-sonnet-4-6
 ## Para entender vs para decidir
 
 - Este repo: **para decidir** midiendo el efecto en tu modelo y tu caso de uso.
-- [`gemba-attention-from-scratch`](https://github.com/josemerca/gemba-attention-from-scratch): **para entender** la mecánica de la atención desde dentro.
+- [`gemba-attention-from-scratch`](https://github.com/joseperezaguera/gemba-attention-from-scratch): **para entender** la mecánica de la atención desde dentro.
 
 ## Tests
 
