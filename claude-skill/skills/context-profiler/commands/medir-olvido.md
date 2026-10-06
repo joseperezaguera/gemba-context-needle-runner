@@ -14,7 +14,7 @@ Comprueba en este orden:
 
 1. **Repo clonado.** Busca `~/gemba-context-needle-runner/`. Si no existe, pregunta al usuario dónde está y haz `cd` allí. Si no lo tiene, sugiérele:
    ```bash
-   git clone https://github.com/josemerca/gemba-context-needle-runner.git ~/gemba-context-needle-runner
+   git clone https://github.com/joseperezaguera/gemba-context-needle-runner.git ~/gemba-context-needle-runner
    ```
 2. **Dependencias.** El runner `mock` no requiere claves. Para `openai` o `anthropic`, verifica que `OPENAI_API_KEY` o `ANTHROPIC_API_KEY` esté en el entorno.
 3. **Default seguro.** Si el usuario no especifica `--runner`, usa `--runner mock` para evitar gasto inesperado. Avisa: *"Voy a usar el runner mock para validar el setup sin coste. Si quieres medir tu modelo real, dímelo."*
